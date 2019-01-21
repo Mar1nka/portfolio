@@ -1,0 +1,17 @@
+* {
+  --background-section-1: #EFF1F2;
+  --background-section-2: #25282A;
+  --background-section-3: #FFFFFF;
+
+  --color-secondary-light: #FFFFFF;
+  --color-secondary-dark: #000000;
+
+  --color-primary-dark: #0059D9;
+  --color-primary-light: #71ABFF;
+
+  --color-border: #C5CDD7;
+
+  --background-color-faceboock: #395A99;
+  --background-color-twitter: #51ADEF;
+  --background-color-telegram: #2CA5E0;
+}

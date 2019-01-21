@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link href="styles/style.css" rel="stylesheet">
+  <link href="styles/carousel.css" rel="stylesheet">
+  <link href="styles/icons.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:800|PT+Mono|PT+Sans" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="profile-wrapper wrapper">
+  <div class="profile">
+    <img class="profile__avatar" src="images/image-1.jpg">
+    <h1 class="profile__name">Марина Сакович</h1>
+    <p class="profile__description">Начинающий js-разработчик, Минск</p>
+    <a href="#contact" class="profile__contact-button button-primary" type="button">Связаться</a>
+  </div>
+</div>
+
+
+<div class="expectations-wrapper wrapper">
+  <div class="expectations">
+    <div class="expectations__header">
+      <h2 class="expectations__header-title">Ожидания от ШРИ</h2>
+    </div>
+
+    <div class="expectations__list">
+      <div class="expectations__list-item">
+        <input class="expectations__list-item-checkbox" type="checkbox" id="expectation-1">
+        <label class="expectations__list-item-header" for="expectation-1">
+          <h3 class="expectations__list-item-header-title">Свобода</h3>
+          <button class="expectations__list-item-header-toggle expectations__list-item-header-toggle icon-plus"
+                  type="button">
+          </button>
+        </label>
+
+        <div class="expectations__list-item-content">
+          <p class="expectations__list-item-content-description">
+            Разработка медиаплана, анализируя результыты рекламной кампании,
+            нейтрализует эмпирический портрет потребителя.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="expectations__list-item">
+        <input class="expectations__list-item-checkbox" type="checkbox" id="expectation-2">
+        <label class="expectations__list-item-header" for="expectation-2">
+          <h3 class="expectations__list-item-header-title">Равенство</h3>
+          <button class="expectations__list-item-header-toggle expectations__list-item-header-toggle icon-plus"
+                  type="button">
+          </button>
+        </label>
+
+        <div class="expectations__list-item-content">
+          <p class="expectations__list-item-content-description">
+            Разработка медиаплана, анализируя результыты рекламной кампании,
+            нейтрализует эмпирический портрет потребителя.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="expectations__list-item">
+        <input class="expectations__list-item-checkbox" type="checkbox" id="expectation-3">
+        <label class="expectations__list-item-header" for="expectation-3">
+          <h3 class="expectations__list-item-header-title">Братство</h3>
+          <button class="expectations__list-item-header-toggle expectations__list-item-header-toggle icon-plus"
+                  type="button">
+          </button>
+        </label>
+
+        <div class="expectations__list-item-content">
+          <p class="expectations__list-item-content-description">
+            Разработка медиаплана, анализируя результыты рекламной кампании,
+            нейтрализует эмпирический портрет потребителя.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="works-wrapper wrapper">
+  <div class="works">
+    <div class="works__header">
+      <h2 class="works__header-title">Мои работы</h2>
+      <p class="works__header-description">Собраны реально работающие проекты</p>
+    </div>
+
+    <div class="works__list">
+      <div class="works__list-item">
+        <div class="works__list-item-header">
+          <h3 class="works__list-item-header-title">Game "Bee garden"</h3>
+          <a class="works__list-item-header-link link-dark" href="https://mar1nka.github.io/bee-garden/."
+             target="_blank">
+            https://mar1nka.github.io/bee-garden
+          </a>
+        </div>
+
+        <div class="works__list-item-content">
+          <div class="carousel">
+
+            <input type="radio" name="carousel-1" id="carousel-1-1" checked/>
+            <input type="radio" name="carousel-1" id="carousel-1-2"/>
+            <input type="radio" name="carousel-1" id="carousel-1-3"/>
+            <input type="radio" name="carousel-1" id="carousel-1-4"/>
+
+            <div class="carousel-slides">
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <img class="works-item__image" src="images/image-2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img class="works-item__image" src="images/image-1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img class="works-item__image" src="images/image-3.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img class="works-item__image" src="images/image-2.jpg">
+                </div>
+              </div>
+            </div>
+
+            <p class="works__list-item-content-description">
+              Я открыта для новых проектов. Вы можете прислать мне для
+              оценки примерное техническое задание или просто описание проекта своими словами.
+            </p>
+
+            <div class="carousel-nav">
+              <label for="carousel-1-1"></label>
+              <label for="carousel-1-2"></label>
+              <label for="carousel-1-3"></label>
+              <label for="carousel-1-4"></label>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="contact-wrapper wrapper" id="contact">
+  <div class="contact" >
+    <div class="contact__header">
+      <h2 class="contact__header-title">Контактная информация</h2>
+    </div>
+
+    <div class="contact__social-networks">
+      <a class="contact__social-networks-link contact__social-networks-link--facebook icon-facebook"
+         href="https://www.facebook.com/"
+         target="_blank"></a>
+
+      <a class="contact__social-networks-link contact__social-networks-link--twitter icon-twitter"
+         href="https://twitter.com/"
+         target="_blank"></a>
+
+      <a class="contact__social-networks-link contact__social-networks-link--telegram icon-telegram"
+         href="https://telegram.org/"
+         target="_blank"></a>
+    </div>
+
+    <p class="contact__description">
+      Я открыта для новых проектов. Вы можете прислать мне для
+      оценки примерное техническое задание или просто описание проекта своими словами.
+    </p>
+
+    <form class="contact__form">
+      <div class="contact__form-fields">
+        <input class="contact__form-field contact__form-field--name" placeholder="Как вас зовут?" required>
+        <input class="contact__form-field contact__form-field--email" placeholder="Почтовый ящик" required>
+        <textarea class="contact__form-field contact__form-field--message" placeholder="Сообщение" required></textarea>
+      </div>
+
+      <div class="contact__form-buttons">
+        <a class="contact__form-button  button-secondary">Прикрепить ТЗ</a>
+        <button class="contact__form-button button-primary">Отправить</button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+</body>
+</html>

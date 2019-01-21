@@ -1,0 +1,99 @@
+@import "colors.css";
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+
+  flex-wrap: wrap;
+
+  width: 100%;
+}
+
+.carousel-slides {
+  width: 100%;
+  overflow: hidden;
+  order: 1;
+  margin-bottom: 15px;
+}
+
+.carousel-inner {
+  width: 400%;
+  transition: margin 1s;
+}
+
+.carousel-item {
+  float: left;
+  width: 25%;
+}
+
+.works-item__image {
+  width: 100%;
+}
+
+.carousel-nav {
+  flex: 1;
+  order: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.carousel-nav label {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary-light);
+  margin: 0 5px;
+
+  transition: all 0.3s;
+}
+
+.carousel-nav label:hover {
+  cursor: pointer;
+  background: var(--color-secondary-light);
+  border: none;
+}
+
+
+.carousel input[name^="carousel"] {
+  display: none;
+}
+
+
+.carousel [id^='carousel'][id$='1']:checked ~ .carousel-nav label[for^="carousel"][for$="1"] {
+  border: 1px solid var(--color-primary-light);
+  background: transparent;
+}
+
+.carousel [id^='carousel'][id$='2']:checked ~  .carousel-nav label[for^="carousel"][for$="2"] {
+  border: 1px solid var(--color-primary-light);
+  background: transparent;
+}
+
+.carousel [id^='carousel'][id$='3']:checked ~ .carousel-nav label[for^="carousel"][for$="3"] {
+  border: 1px solid var(--color-primary-light);
+  background: transparent;
+}
+
+.carousel [id^='carousel'][id$='4']:checked ~ .carousel-nav label[for^="carousel"][for$="4"] {
+  border: 1px solid var(--color-primary-light);
+  background: transparent;
+}
+
+.carousel [id^='carousel'][id$='1']:checked ~ .carousel-slides .carousel-inner {
+  margin-left: 0;
+}
+.carousel [id^='carousel'][id$='2']:checked ~ .carousel-slides .carousel-inner {
+  margin-left: -100%;
+}
+.carousel [id^='carousel'][id$='3']:checked ~ .carousel-slides .carousel-inner {
+  margin-left: -200%;
+}
+.carousel [id^='carousel'][id$='4']:checked ~ .carousel-slides .carousel-inner {
+  margin-left: -300%;
+}
+
+
