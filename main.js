@@ -1,2 +1,2 @@
 
-import './styles/portfolio.css';
+import './styles/main.css';

@@ -578,6 +578,8 @@ body {
       justify-content: flex-start;
       align-items: center;
 
+      margin-bottom: 40px;
+
       width: 100%;
     }
 
@@ -1152,3 +1154,209 @@ body {
 }
 
 */
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+
+  flex-wrap: wrap;
+
+  width: 100%;
+
+  /*
+
+  &__slides {
+    width: 100%;
+    overflow: hidden;
+    order: 1;
+    margin-bottom: 15px;
+
+
+    &-inner {
+      width: 400%;
+      transition: margin 1s;
+
+      &-item {
+        float: left;
+        width: 25%;
+
+        &-image {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__nav {
+    flex: 1;
+    order: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    label {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--color-primary-light);
+      margin: 0 5px;
+
+      transition: all 0.3s;
+
+      &:hover {
+        cursor: pointer;
+        background: var(--color-secondary-light);
+        border: none;
+      }
+    }
+  }
+  */
+
+
+}
+
+.carousel__slides {
+  width: 100%;
+  overflow: hidden;
+  order: 1;
+  margin-bottom: 15px;
+}
+
+.carousel__slides-inner {
+  width: 400%;
+  transition: margin 1s;
+}
+
+.carousel__slides-inner-item {
+  float: left;
+  width: 25%;
+}
+
+.carousel__slides-inner-item-image {
+  width: 100%;
+  //height: 495px;
+}
+
+ .carousel__nav {
+  width: 30%;
+  order: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+   /*
+  @media (max-width: 600px) {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+    order: 2;
+  }
+  */
+}
+
+.carousel__nav label {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary-light);
+  margin: 0 5px;
+
+  transition: all 0.3s;
+}
+
+.carousel__nav label:hover {
+  cursor: pointer;
+  background: var(--color-secondary-light);
+  border: none;
+}
+
+
+.carousel input[name^="carousel"] {
+  display: none;
+}
+
+
+.carousel [id^='carousel'][id$='1']:checked ~ .carousel__nav label[for^="carousel"][for$="1"] {
+  border: 1px solid var(--color-primary-light);
+  background: transparent;
+}
+
+.carousel [id^='carousel'][id$='2']:checked ~  .carousel__nav label[for^="carousel"][for$="2"] {
+  border: 1px solid var(--color-primary-light);
+  background: transparent;
+}
+
+.carousel [id^='carousel'][id$='3']:checked ~ .carousel__nav label[for^="carousel"][for$="3"] {
+  border: 1px solid var(--color-primary-light);
+  background: transparent;
+}
+
+.carousel [id^='carousel'][id$='4']:checked ~ .carousel__nav label[for^="carousel"][for$="4"] {
+  border: 1px solid var(--color-primary-light);
+  background: transparent;
+}
+
+.carousel [id^='carousel'][id$='1']:checked ~ .carousel__slides .carousel__slides-inner {
+  margin-left: 0;
+}
+.carousel [id^='carousel'][id$='2']:checked ~ .carousel__slides .carousel__slides-inner {
+  margin-left: -100%;
+}
+.carousel [id^='carousel'][id$='3']:checked ~ .carousel__slides .carousel__slides-inner {
+  margin-left: -200%;
+}
+.carousel [id^='carousel'][id$='4']:checked ~ .carousel__slides .carousel__slides-inner {
+  margin-left: -300%;
+}
+
+@media (max-width: 600px) {
+  .carousel__nav {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+    order: 2;
+  }
+}
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?ohvbgl');
+  src:  url('../fonts/icomoon.eot?ohvbgl#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ohvbgl') format('truetype'),
+    url('../fonts/icomoon.woff?ohvbgl') format('woff'),
+    url('../fonts/icomoon.svg?ohvbgl#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-telegram:before {
+  content: "\e900";
+}
+.icon-plus:before {
+  content: "\ea0a";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}

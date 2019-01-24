@@ -543,6 +543,8 @@ body {
       justify-content: flex-start;
       align-items: center;
 
+      margin-bottom: 40px;
+
       width: 100%;
 
       &-header {
