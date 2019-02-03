@@ -103,13 +103,11 @@
   max-width: 1000px;
   padding: 100px 150px;
 
-  @media (max-width: 600px) {
-    max-width: 600px;
+  @media (max-width: 1000px) {
     padding: 80px 40px;
   }
 
-  @media (max-width: 320px) {
-    max-width: 320px;
+  @media (max-width: 600px) {
     padding: 60px 20px;
   }
 }
@@ -148,20 +146,23 @@ body {
   max-width: 100%;
 
   &__avatar {
+    background: url("/images/avatar.jpg") -496px -306px;
     width: 340px;
     height: 340px;
     margin-bottom: 35px;
 
     border-radius: 50%;
 
-    @media (max-width: 600px) {
+    @media (max-width: 1000px) {
       width: 250px;
       height: 250px;
+      background-position: -534px -334px;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 600px) {
       width: 205px;
       height: 205px;
+      background-position: -551px -357px;
     }
   }
 
@@ -175,7 +176,7 @@ body {
     line-height: 44px;
     text-align: center;
 
-    @media (max-width: 600px) {
+    @media (max-width: 1000px) {
       font-size: 32px;
       line-height: 36px;
     }
@@ -252,7 +253,7 @@ body {
           color: var(--color-secondary-dark);
         }
 
-        &:checked ~ &-header &-header-toggle {
+        &:checked ~ .expectations__list-item-header .expectations__list-item-header-toggle {
           transform: rotate(45deg);
         }
 
@@ -343,7 +344,7 @@ body {
     width: 100%;
     margin-bottom: 50px;
 
-    @media (max-width: 600px) {
+    @media (max-width: 1000px) {
       margin-bottom: 25px;
     }
 
@@ -441,7 +442,7 @@ body {
           font-size: 14px;
           line-height: 20px;
 
-          @media (max-width: 600px) {
+          @media (max-width: 1000px) {
             order: 3;
             width: 100%;
           }
@@ -568,11 +569,11 @@ body {
     font-size: 14px;
     line-height: 20px;
 
-    @media (max-width: 600px) {
+    @media (max-width: 1000px) {
       padding: 0 10px;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 600px) {
       padding: 0;
     }
   }
@@ -620,7 +621,7 @@ body {
         width: 48%;
         margin-right: 2%;
 
-        @media (max-width: 600px) {
+        @media (max-width: 1000px) {
           width: 100%;
           margin-right: 0;
         }
@@ -630,7 +631,7 @@ body {
         width: 48%;
         margin-left: 2%;
 
-        @media (max-width: 600px) {
+        @media (max-width: 1000px) {
           width: 100%;
           margin-left: 0;
         }
@@ -659,7 +660,5 @@ body {
         display: none;
       }
     }
-
-
   }
 }
