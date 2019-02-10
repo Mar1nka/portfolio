@@ -146,7 +146,7 @@ body {
   max-width: 100%;
 
   &__avatar {
-    background: url("/images/avatar.jpg") -496px -306px;
+    background: url("../images/avatar.jpg") -496px -306px;
     width: 340px;
     height: 340px;
     margin-bottom: 35px;
